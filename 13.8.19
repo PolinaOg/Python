@@ -1,0 +1,19 @@
+n=int(input("Enter the number of tickets"))
+s=0
+list=[]
+
+for i in range (n):
+    a=int(input('Please tell visitors age'))
+    if a<18:
+        s=s+0
+    elif 18<=a<25:
+        s=s+990
+    else:
+        s=s+1390
+if n<=3:            
+    k=1
+else:
+    k=0.9
+list.append(s)
+summa=sum(list)
+print("The tickets cost is =", k*summa)
